@@ -1,0 +1,47 @@
+.editor-title, .preview-title {
+  position: relative;
+  background-color: rgba(74, 61, 104, 0.9);
+  color: white;
+  border-left: 6px solid red;
+  padding: 5px;
+  width: 98.5%;
+  font-size: 20px;
+  box-shadow: 1px 1px 10px 2px white;
+  border-bottom: 1px solid black;
+}
+
+#editor, #preview {
+  width: 98.5%;
+  min-height: 600px;
+  border: 1px solid black;
+  padding: 15px;
+  padding-right: 0px;
+  box-shadow: 1px 1px 10px 2px white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "header header" "editor-box preview-box";
+  grid-gap: 20px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.header {
+  grid-area: header;
+  height: 100px;
+  text-align: center;
+}
+
+.editor-box {
+  grid-area: editor-box;
+  padding-left: 10px;
+}
+
+.preview-box {
+  grid-area: preview-box;
+  padding-right: 10px;
+}
